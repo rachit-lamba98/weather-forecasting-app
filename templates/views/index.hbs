@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title> Weather App </title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+  </head>
+  <body>
+    {{>header}}
+    <br>
+    <div class="main-content">
+      <p class='main-text'> Check weather of any location! </p>
+      <form>
+        <input class='search-field' type='text' placeholder='Enter any location eg: Delhi'>
+        <button class='search-btn'> Search </button>
+      </form>
+      <p id='results'></p>
+    </div>
+    {{>footer}}
+    <script src='./js/script.js'> </script>
+  </body>
+</html>

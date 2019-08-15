@@ -1,0 +1,57 @@
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('../img/background-2.jpg')
+}
+
+header h1{
+  font-size: 4em;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+header .navbar{
+  width: 100%;
+  text-align: center;
+}
+
+header ul {
+  min-height: 50px;
+  margin-bottom: 15px;
+}
+
+header li {
+  margin: 0 auto;
+  font-size: 1.2em;
+  list-style: none;
+  float: left;
+  padding-left: 15px;
+}
+
+header li > a{
+  font-weight: lighter;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding-left: 6px;
+  text-decoration: none;
+  text-decoration-color: none
+  padding: 3px;
+}
+
+header .test {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+
+.main-content{
+  margin-left: 50px;
+  flex-grow: 1;
+}
+
+footer {
+  text-align: center;
+  color: grey;
+}
