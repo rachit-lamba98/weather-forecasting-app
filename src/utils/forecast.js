@@ -1,7 +1,10 @@
 const request = require('request')
 
+//Configure your accessToken here
+const accessToken = '68918654bec2d4662f9b96a984ca0fc2'
+
 const forecast = (latitude, longitude, callback) => {
-  const url = 'https://api.darksky.net/forecast/68918654bec2d4662f9b96a984ca0fc2/' + latitude +','+longitude +'?units=si'
+  const url = 'https://api.darksky.net/forecast/' + accessToken + '/' + latitude +','+longitude +'?units=si'
   request({url, json:true}, (error, {body}) => {
     if(error){
       callback('Could not connect to the service.', undefined)
