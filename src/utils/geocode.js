@@ -1,7 +1,10 @@
 const request = require('request')
 
+//Configure your accessToken here
+const accessToken='pk.eyJ1IjoicmFjaGl0MzQ1IiwiYSI6ImNqejVqYW9qZTBwanUzb20yNmMyZ2FjZWcifQ.Oy3ydxGRyBE1tpBgTTqAWA'
+
 const geocode = (address, callback) => {
-  const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + address + '.json?access_token=pk.eyJ1IjoicmFjaGl0MzQ1IiwiYSI6ImNqejVqYW9qZTBwanUzb20yNmMyZ2FjZWcifQ.Oy3ydxGRyBE1tpBgTTqAWA&limit=1'
+  const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + address + '.json?access_token='+ accessToken +'&limit=1'
   request({url: url, json: true}, (error, {body}) => {
     if(error){
       callback('Unable to connect to internet services.', undefined)
