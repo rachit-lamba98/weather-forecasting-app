@@ -22,6 +22,7 @@ app.get('', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
+  console.log("rendering about")
   res.render('about', {
     title: 'About Us',
     name: 'Rachit',
